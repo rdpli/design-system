@@ -209,6 +209,24 @@ $calendar-dayeventcell-hover-color: #F1F3F4 !default;
 
 
 @include respond-to($breakpoint-small) { 
+    
+
+    .main-area-content {
+        min-width: 50em;
+    }
+    
+
+    .calendar-aside {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+    .calendar-aside + .calendar-aside {
+        left: 6rem;
+        background: white;
+    }
+
+    
     .calendar-eventcell-title, 
     .calendar-eventcell-timestring {
         font-size: 1.2rem;
